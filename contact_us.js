@@ -26,6 +26,8 @@ function validateForm() {
         document.forms["contactRestaurant"]["phone"].focus();
       return false;
 
+  }
+
 var reason = document.forms["contactRestaurant"]["contact"].value;
 if (contact =="") {
     alert("Reason for Inquiry must be filled out")
@@ -35,11 +37,10 @@ if (contact =="") {
     return false;
 
 }
+if (validateForm ="true"){
+    alert("Successful Submission");
+}
+ }
 
 
 
-
-$(contactRestaurant).submit(function(){
-    $('.alert-success').show();
-    event.preventDefault(); // if you want to send data only, do not reload page.
-})
