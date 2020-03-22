@@ -1,0 +1,23 @@
+/*
+Creator: Alysha Soneji
+Date created: Today's Date
+Date last modified:
+*/
+
+header{
+    background-color: lemonchiffon;
+    height: 160px;
+    text-align: center;
+    padding: 10px 10px 20px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color:white;
+    height: 105px;
+    text-align: center;
+    padding: 10px 10px 20px 10px;
+    margin-top: 20px;
+
+}
