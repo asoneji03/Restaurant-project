@@ -1,10 +1,45 @@
-function validateItems() {
-    var name = document.forms["contact"]["name"].value;
-    if (name == "" || isNaN(name)) {
-        alert("Name must be filled in with a value.");
-        document.forms["contact"]["name"]
+function validateForm() {
+    var name = document.forms["contactRestaurant"]["name"].value;
+    if (name == "") {
+      alert("Name must be filled out");
+      document.forms["contactRestaurant"]["name"]
            .parentElement.className = "form-group has-error";
-        document.forms["contact"]["name"].focus();
-        return false;
-
+        document.forms["contactRestaurant"]["name"].focus();
+      return false;
     }
+  
+  var email = document.forms["contactRestaurant"]["email"].value;
+  if (email =="") {
+      alert("Email must be filled out")
+      document.forms["contactRestaurant"]["email"]
+           .parentElement.className = "form-group has-error";
+        document.forms["contactRestaurant"]["email"].focus();
+      return false;
+  }
+
+
+  var phone = document.forms["contactRestaurant"]["phone"].value;
+  if (phone =="") {
+      alert("Phone must be filled out")
+      document.forms["contactRestaurant"]["phone"]
+           .parentElement.className = "form-group has-error";
+        document.forms["contactRestaurant"]["phone"].focus();
+      return false;
+
+var reason = document.forms["contactRestaurant"]["contact"].value;
+if (contact =="") {
+    alert("Reason for Inquiry must be filled out")
+    document.forms["contactRestaurant"]["contact"]
+         .parentElement.className = "form-group has-error";
+      document.forms["contactRestaurant"]["contact"].focus();
+    return false;
+
+}
+
+
+
+
+$(contactRestaurant).submit(function(){
+    $('.alert-success').show();
+    event.preventDefault(); // if you want to send data only, do not reload page.
+})
